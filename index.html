@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Panel de Figuras</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div id="menu">
+    <h2>Configuración</h2>
+    <label for="canvas-width">Ancho del Área de Trabajo:</label>
+    <input type="number" id="canvas-width" min="0"><br>
+
+    <label for="canvas-height">Alto del Área de Trabajo:</label>
+    <input type="number" id="canvas-height" min="0"><br>
+    
+
+    <hr>
+
+    <h2>Crear Figura</h2>
+    <label for="figure-width">Ancho:</label>
+    <input type="number" id="figure-width" min="0"><br>
+
+    <label for="figure-height">Alto:</label>
+    <input type="number" id="figure-height" min="0"><br>
+
+    <label for="color">Color:</label>
+    <input type="color" id="color"><br>
+
+    <button onclick="createFigure()">Crear Figura</button>
+</div>
+
+<div id="canvas"></div>
+<ul id="figure-list" class="figure-list"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>

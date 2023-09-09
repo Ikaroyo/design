@@ -1,0 +1,43 @@
+#menu {
+    float: left;
+    width: 200px;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+#canvas {
+    margin-left: 220px;
+    border: 1px solid black;
+    min-height: 300px;
+    padding: 0px;
+    position: relative;
+}
+
+.figure {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    margin: 0px;
+    cursor: move;
+    position: absolute;
+}
+
+.figure-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.figure-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.figure-item span {
+    margin-left: 0px;
+}
+
+.figure-item .delete {
+    margin-left: 10px;
+    cursor: pointer;
+}
