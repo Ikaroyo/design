@@ -1,21 +1,26 @@
 let figureCount = 1;
 
 function createFigure() {
+    const nameInput = document.getElementById('figure-name');
     const widthInput = document.getElementById("figure-width");
     const heightInput = document.getElementById("figure-height");
     const colorInput = document.getElementById("color");
 
+
+    const nameFigure= String(nameInput.value);
     const width = parseInt(widthInput.value);
     const height = parseInt(heightInput.value);
     const color = colorInput.value;
 
     const figure = document.createElement("div");
     figure.className = "figure";
+
     figure.style.width = width + "px";
     figure.style.height = height + "px";
     figure.style.backgroundColor = color;
     figure.draggable = true;
-    figure.id = "figure-" + figureCount;
+    figure.id = nameFigure + " (x: "+ width +",y:"+ height +")";
+    /* figure.id = "figure-" + figureCount; */
 
     figure.addEventListener("dragstart", dragStart);
     figure.addEventListener("dragend", dragEnd);
